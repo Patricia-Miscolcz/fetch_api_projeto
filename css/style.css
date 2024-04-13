@@ -1,0 +1,48 @@
+*{
+    font-family: Helvetica;
+}
+
+body{
+    padding: 15px; /*espaçamento interno*/
+}
+
+.hide{
+    display: none; /*esconder os elementos*/
+}
+
+a, input[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /*tirar o undeline dos links*/
+    opacity: .7; /*botao ficar mais apagado*/
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+a:hover,
+input[type="submit"]{
+    opacity: 1;
+}
+
+form{
+    width: 300px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column; /*com isso label numa linha e o input em outra*/
+    margin-bottom: .5em; /*afasta um elemento do outro*/
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: .4em; /*afasta do input*/
+}
+
+form input,
+form textarea{
+    padding: 7px; /*afasta as letras do limite do input*/
+}
